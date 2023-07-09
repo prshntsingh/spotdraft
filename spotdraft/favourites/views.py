@@ -56,7 +56,7 @@ class FavouriteViewSet(viewsets.ViewSet):
 
         if not user_id or not (movie_id or planet_id):
 
-            return Response({f" {user_id}, {movie_id}, {planet_id}error": "user_id and either movie_id or planet_id are required"},
+            return Response({"error": "user_id and either movie_id or planet_id are required"},
                             status=status.HTTP_400_BAD_REQUEST)
         if movie_id:
             try:

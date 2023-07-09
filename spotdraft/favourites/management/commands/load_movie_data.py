@@ -5,7 +5,7 @@ from django.core.management import execute_from_command_line
 
 class Command(BaseCommand):
     def handle(self, *args, **options):
-        url = "https://swapi.dev/api/films"
+        url = "https://sw-api-rwjfuiltyq-el.a.run.app/api/films"
         response = requests.get(url)
         data = response.json()
 

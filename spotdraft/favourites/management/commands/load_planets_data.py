@@ -5,7 +5,7 @@ from django.core.management import execute_from_command_line
 
 class Command(BaseCommand):
     def handle(self, *args, **options):
-        base_url = "https://swapi.dev/api/planets/"
+        base_url = "https://sw-api-rwjfuiltyq-el.a.run.app/api/planets/"
         next_page = base_url + "?page=1"
 
         while next_page:
